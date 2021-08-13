@@ -2,9 +2,13 @@
   <div>
       <h1>{{ title }}</h1>
       <ul>
-          <book-item v-for="book in books" :book="book"></book-item>
+          <book-item
+        v-for='book in books'
+        :book='book'
+      >{{book.title}}:{{book.author}}</book-item>
       </ul>
-      <book-form @addBook='appendBook'></book-form>
+      <br><hr>
+    <book-form @addBook='appendBook'></book-form>
   </div>
 </template>
 
