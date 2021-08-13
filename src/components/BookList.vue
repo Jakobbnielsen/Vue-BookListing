@@ -8,11 +8,10 @@
 </template>
 
 <script>
-import BookItem from './BookItem.vue'
+import BookItem from './BookItem.vue';
 export default {
     name: "BookList",
     components: {
-        BookItem
         BookItem,
     },
     data() {
